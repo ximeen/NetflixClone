@@ -1,0 +1,90 @@
+
+.FilmsList{
+         margin-bottom: 2rem;
+
+         h2{
+                  font-size: 1.7rem;
+                  margin: 0 0 0 2rem;
+
+                 
+         }
+
+         
+
+         .ArrowLeft, .ArrowRight{
+                  margin-top: 12px;
+                  position: absolute;
+                  width: 3rem;
+                  height: 19rem;
+                  background-color: rgba(0, 0, 0, .6);
+                  z-index: 98;
+
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+
+                  overflow: hidden;
+                  border-radius: .2rem;
+                  cursor: pointer;
+                  opacity: 0;
+
+                  transition: all .5s;
+             
+         
+         }
+
+         .ArrowLeft{
+                  left: 0;
+         }
+         .ArrowRight{
+                  right: 0;
+         }
+}
+
+.FilmsList:hover .ArrowLeft, .FilmsList:hover .ArrowRight{
+         opacity: 1;
+}
+
+@media(max-width: 768px) {
+
+         .FilmsList{
+
+                  
+                  .ArrowLeft, .ArrowRight{
+                           width: 2rem;
+                           opacity: 1;
+                  }
+         }
+         
+}
+
+
+.MovieRowArea{
+         overflow-x:hidden;
+         padding: 0 60px;
+         margin-top: .5rem;
+         
+         .MovieList{
+                  cursor: pointer;
+                  transition: all .5s ease;
+
+                  .MovieListItem{
+                           display: inline-block;
+                           width: 13rem;
+
+                           img{
+                                    width: 100%;
+                                    
+                                    border-radius: 2%;
+                                    transform: scale(.9);
+                                    transition: all ease .3s;
+                                    
+                                    &:hover{
+                                            transform: scale(1);   
+                                    }
+                           }
+                  }
+         }
+}
+
+

@@ -1,0 +1,132 @@
+.BlurVertical{
+         height: inherit;
+         width: inherit;
+         background: linear-gradient(to top, #111 10%, transparent 90%)
+}
+
+.BlurHorizontal{
+         height: inherit;
+         width: inherit;
+         background: linear-gradient(to right, #111 30%, transparent 70% );
+
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         padding-left: 3.5rem;
+}
+
+.SectionHeader{
+         height: 100vh;
+}
+
+.TitleName{
+         font-size: 4rem;
+         font-weight: bold;
+}
+
+
+.Year, .Points, .NumberSeasons{
+         display: inline-block;
+         margin-right: 1rem;
+}
+
+.MovieInfos{
+         font-size: 1.3rem;
+         font-weight: bold;
+         margin-top: 1rem;
+
+         .Points{
+                  color: #46d369;
+         }
+}
+
+.Description{
+         margin-top: 1rem;
+         font-size: 1.5rem;
+         color: #888;
+
+         max-width: 40%;
+
+         overflow: hidden;
+         text-overflow: ellipsis; // Adicionando "..." ao final
+         display: -webkit-box;
+         -webkit-line-clamp: 4; // Quantidade de linhas
+         -webkit-box-orient: vertical;
+}
+
+.Buttons{
+         margin: 1rem 0;
+         
+         
+         a{
+                  text-decoration: none;
+         }
+         
+         .Watch, .ListPlus{
+                  display: inline-block;
+                  margin: 0 1rem;
+                  padding: .7rem 1.5rem;
+                  border-radius: .4rem;
+                  font-size: 1.2rem;
+
+                  transition: all ease .3s;
+                  filter: brightness(0.9);
+                  
+                  &:hover{
+                           filter: brightness(1.1);
+                  }
+         }
+
+         .Watch{
+                  background: #fff;
+                  color: #000;
+         }
+
+         .ListPlus{
+                  background: #333;
+                  color: #fff;
+         }
+         
+}
+
+.Genres{
+         font-size: 1.1rem;
+         color: #999;
+}
+
+@media (max-width:768px){
+
+         .BlurHorizontal{
+                  padding-left: 2rem;
+         }
+
+         .SectionHeader{
+                  height: 90vh;
+                  
+         }
+         .TitleName{
+                  font-size: 2rem;
+                  
+         }
+         .MovieInfos{
+                  font-size: 1rem;
+         }
+
+         .Description{
+                  max-width: 100%;
+                  color: #DCDCDC;
+         }
+
+         .Buttons{
+                  display: flex;
+
+                  .Watch, .ListPlus{
+                           display: inline-block;
+                           font-size: 1rem;
+         
+                           transition: all ease .3s;
+                        
+                  }
+         }
+
+}

@@ -1,0 +1,38 @@
+header{
+         position: fixed;
+         z-index: 99;
+         top: 0;
+         left: 0;
+         right: 0;
+         height: 4rem;
+
+         display: flex;
+         justify-content:space-between;
+         align-items:center;
+         background: transparent;
+
+         padding: 0 2rem;
+
+         transition: all 0.5s
+}
+
+header.bkBlack{
+         background: #141414
+}
+
+.LogoNetflix{
+         height:2rem;
+
+         img{
+                  height:100%;
+         }
+}
+
+.ImageUser{
+         height:3rem;
+
+         img{
+                  height: 100%;
+                  border-radius: .3rem;
+         }
+}
