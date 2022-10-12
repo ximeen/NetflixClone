@@ -2,7 +2,6 @@ import React from 'react';
 import './Header.scss';
 
 export default({item}) => {
-         console.log(item);
 
          let FirstDate = new Date(item.first_air_date);
          let genres = [];
